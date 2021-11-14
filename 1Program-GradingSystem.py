@@ -1,7 +1,10 @@
 import math
+def round_half_up(n, decimals=0):
+    multiplier = 10 ** decimals
+    return math.floor(n*multiplier + 0.5) / multiplier
 
 Mark = (float(input("Enter you mark:")))
-your_mark= round (Mark)
+your_mark= round_half_up (Mark)
 if your_mark >= 97 and your_mark <= 100:
     print("Excellent!")
     print("Your mark is 1.0!")
@@ -32,7 +35,13 @@ elif your_mark == 75:
 elif your_mark >= 65 and your_mark <= 74:
     print("Failure!")
     print("Your mark is 5.0!")
-else:
-    print(f"Your mark is either (Inc.) Incomplete, Your mark has been withdrawn (W) or You are Dropped (D). ")
+
+your_mark = input("Enter your the status of you mark (Inc.,W,D):")
+if your_mark == "Inc.":
+        print("Your status on this subject is INCOMPLETE.")
+elif your_mark == "W":
+        print("Your status on this subject is WITHDRAWN")
+elif your_mark == "D":
+        print("Your status on this subject is DROPPED")
 
 print("Your grade is recorded!")
