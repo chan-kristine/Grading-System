@@ -32,14 +32,7 @@ elif your_mark == 75:
 elif your_mark >= 65 and your_mark <= 74:
     print("Failure!")
     print("Your mark is 5.0!")
-
 else:
-
-    if your_mark == "Inc." :
-        print("Your mark is Incomplete!")
-    elif your_mark == "W" :
-        print("Withdrawn")
-    elif your_mark == "D" :
-        print("Dropped")
+    print(f"Your mark is either (Inc.) Incomplete, Your mark has been withdrawn (W) or You are Dropped (D). ")
 
 print("Your grade is recorded!")
