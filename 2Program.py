@@ -1,19 +1,19 @@
 # Clarification of system program
 print("\nThe program will identify what digit is the lowest between the three user's inputted digits.")
 
-first_digit = float(input("Enter your first number: "))
-second_digit = float(input("Enter your second number: "))
-third_digit = float(input("Enter your third number: "))
+first_num = float(input("Enter your first number: "))
+second_num = float(input("Enter your second number: "))
+third_num = float(input("Enter your third number: "))
 
-def number_display(Quantity_1, Quantity_2, Quantity_3):
-    if Quantity_1 < Quantity_2 and Quantity_1 < Quantity_3:
-        return Quantity_1;
-    elif Quantity_2 < Quantity_1 and Quantity_2 < Quantity_3:
-        return Quantity_2;
-    elif Quantity_3 < Quantity_1 and Quantity_3 < Quantity_2:
-        return Quantity_3;
+def number_display(Amount1, Amount2, Amount3):
+    if Amount1 < Amount2 and Amount1 < Amount3:
+        return Amount1;
+    elif Amount2 < Amount1 and Amount2 < Amount3:
+        return Amount2;
+    elif Amount3 < Amount1 and Amount3 < Amount2:
+        return Amount3;
 
 
-smallest_num = number_display(Quantity_1 = first_digit, Quantity_2 = second_digit, Quantity_3 = third_digit)
+smallest_num = number_display(Amount1 = first_num, Amount2 = second_num, Amount3 = third_num)
 
-print(f"The Lowest input number in the program is {smallest_num} . ")
+print(f"The Lowest input number in the program is {smallest_num} .")
